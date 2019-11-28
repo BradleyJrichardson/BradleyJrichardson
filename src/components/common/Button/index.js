@@ -92,6 +92,9 @@ export const Button = styled.button`
         transform: translate3d(0, 0, -1em);
       }
     }
+    @media (max-width: 680px) {
+    margin: 15px 0
+    }
   
 `
 

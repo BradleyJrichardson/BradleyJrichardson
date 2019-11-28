@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/overlay.svg';
 
 export const Wrapper = styled.div`
+  height: 90vh;
   padding-bottom: 4rem;
   /* background-image: url(${overlayIllustration}); */
   background-size: contain;
@@ -19,6 +20,10 @@ export const IntroWrapper = styled.div`
   @media (max-width: 960px) {
     
   }
+
+  @media (max-width: 400px) {
+    padding: 1rem 0;
+    }
 `;
 
 export const Details = styled.div`
@@ -62,6 +67,10 @@ export const ButtonWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    }
 
 /* ${({ desktop }) =>
     desktop
