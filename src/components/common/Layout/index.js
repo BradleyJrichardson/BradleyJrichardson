@@ -1,4 +1,37 @@
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
+import { Footer } from 'components/landing/navs'
+import { Global } from './styles'
+import './fonts.css'
+
+export const Layout = ({ children }) => (
+	<>
+		<Global />
+		{children}
+		<Footer />
+	</>
+)
+
+export const Container = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: 601px) {
+    width: 90%;
+  }
+
+  @media (min-width: 993px) {
+    width: 80%;
+  }
+`;
+
+
+export const Card = styled.div`
+  padding: 1rem;
+  background: #fff;
+  height: 100%;
+`;
 
 let text = "#382b22";
 let lightpink = "#fff0f0";
@@ -122,4 +155,22 @@ export const SmallButton = styled.button`
 `
 
 
+export const Input = styled.input`
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #6c63ff;
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
 
+  ${({ error }) =>
+    error &&
+    `
+		border-color: #ff4136;
+	`}
+
+  &::placeholder {
+    color: #a7a7a7;
+  }
+`;
