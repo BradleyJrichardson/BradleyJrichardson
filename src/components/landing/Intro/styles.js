@@ -2,11 +2,10 @@ import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/overlay.svg';
 
 export const Wrapper = styled.div`
-  height: 90vh;
-  padding-bottom: 4rem;
-  /* background-image: url(${overlayIllustration}); */
+  height: 100vh;
+  background-image: url(${overlayIllustration});
   background-size: contain;
-  /* background-position: top right; */
+  background-position: top right;
   background-repeat: no-repeat;
 `;
 
@@ -15,9 +14,9 @@ export const IntroWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
 
   @media (max-width: 960px) {
+  flex-direction: column;
     
   }
 
@@ -27,7 +26,9 @@ export const IntroWrapper = styled.div`
 `;
 
 export const Details = styled.div`
-text-align: center;
+  width: 40%;
+  padding-right: 120px;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,4 +101,16 @@ export const ButtonWrapper = styled.div`
 					}
 			}
 	`} */
+`;
+
+export const Thumbnail = styled.div`
+  flex: 1;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
 `;

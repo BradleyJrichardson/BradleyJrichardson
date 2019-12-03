@@ -11,6 +11,10 @@ const CardHeader = ({ title }) => {
 
 const Wrapper = styled.div`
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 
   h3 {
     font-size: 0.9em;

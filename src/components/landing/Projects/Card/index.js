@@ -4,7 +4,9 @@ import CardBody from './components/CardBody'
 import CardFooter from './components/CardFooter'
 import styled from 'styled-components'
 
-
+export const Wrapper = styled.div`
+  padding: 2rem 0;
+`;
  const StyledCard = styled.div`
   width: 300px;
   height: 100%;
@@ -20,7 +22,7 @@ import styled from 'styled-components'
     transition: 0.3s;
 
     .gatsby-image-wrapper {
-      transform: scale(1.05);
+      transform: scale(1.02);
       transition: 0.3s;
       box-shadow: 0 17px 46px -5px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
@@ -35,12 +37,14 @@ import styled from 'styled-components'
 `
 export const Card = ({ id, link, title, image, description }) => {
   return (
-    // <Wrapper id={id} as="a" href={link}>
+    <Wrapper id={id} >
       <StyledCard >
-        <CardHeader title={"hello world"} />
-        <CardBody image={image} title={"test"} />
-        <CardFooter description={"lorem20"} />
+        <CardHeader title={title} />
+        <a href={link} >
+          <CardBody image={image} title={title} />
+        </a>
+        <CardFooter description={description} />
       </StyledCard>
-    // </Wrapper>
+     </Wrapper>
   )
 }

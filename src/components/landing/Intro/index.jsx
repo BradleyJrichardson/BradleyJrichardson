@@ -1,28 +1,26 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Header } from 'components/theme'
+import { Header } from 'components/landing/navs'
 import { Container, Button } from 'components/common'
-import { Wrapper, IntroWrapper, Details, ButtonWrapper	 } from './styles'
+import dev from 'assets/illustrations/dev.svg'
+import { Wrapper, IntroWrapper, Details, ButtonWrapper, Thumbnail } from './styles'
 
 export const Intro = () => (
 	<Wrapper>
 		<Header />
 		<IntroWrapper as={Container}>
 			<Details>
-				<h1>Welcome!<br></br>I'm Brad</h1>
-				<h4>Web Developer</h4>
+				<h1>Bradley<br/>Richardson</h1>
+				{/* <h4>Full Stack <br/>Web Developer</h4> */}
 					<ButtonWrapper>
-						<Button as={AnchorLink} href="#about">
-							About
-						</Button>
-						<Button as={AnchorLink} href="#contact">
-							Contact
-						</Button>
 						<Button as={AnchorLink} href="#projects">
 							Projects
 						</Button>
 					</ButtonWrapper>
 			</Details>
+			<Thumbnail>
+				<img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
+			</Thumbnail>
 		</IntroWrapper>
 	</Wrapper>
 )

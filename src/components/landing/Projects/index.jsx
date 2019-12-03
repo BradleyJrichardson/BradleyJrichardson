@@ -1,27 +1,10 @@
 import React from 'react'
-import { Container, Card } from './Card'
 import { useStaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components';
+import { Container } from 'components/common'
+import {  Card } from './Card'
+import { Wrapper, Grid} from './styles'
 
-export const Wrapper = styled.div`
-  padding: 2rem 0;
-`;
 
-export const Grid = styled.div`
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
-
-  @media (max-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 680px) {
-    grid-template-columns: 1fr;
-  }
-`;
 
 
 export const Projects = () => {
@@ -69,7 +52,7 @@ export const Projects = () => {
     <Wrapper as={Container} id="projects">
       <h2>Work Projects</h2>
         <Grid>
-          <Card image={data.sane} />
+          <Card image={data.sane} link={projectObj.sane.link} title={projectObj.sane.title} />
           <Card image={data.socialCohesian} />
           <Card image={data.dashboard} />
           <Card image={data.lumin} />
@@ -79,5 +62,11 @@ export const Projects = () => {
   )
 }
 
+const projectObj = {
+  sane: {
+    link: "https://nationalstigmareportcard.com.au/",
+    title: "Our Turn To Speak",
+  }
+}
 
 
