@@ -3,40 +3,26 @@ import overlayIllustration from 'assets/illustrations/overlay.svg';
 
 export const Wrapper = styled.div`
   height: 100vh;
-  background-image: url(${overlayIllustration});
-  background-size: contain;
-  background-position: top right;
-  background-repeat: no-repeat;
+
 `;
 
+export const StyledHeader = styled.header`
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1.5rem;
+  background-color: pink;
+  height: 80vh;
+  padding-top: 1.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 62% 95%, 29% 99%, 0 94%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 62% 95%, 29% 99%, 0 94%);
+`
 export const IntroWrapper = styled.div`
   padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 960px) {
-  flex-direction: column;
-    
-  }
-
-  @media (max-width: 400px) {
-    padding: 1rem 0;
-    }
 `;
 
 export const Details = styled.div`
-  width: 40%;
-  padding-right: 120px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; 
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
+
 
   h1 {
     margin-bottom: 2rem;
@@ -50,7 +36,7 @@ export const Details = styled.div`
 
   h4 {
     margin-bottom: 2.5rem;
-    font-size: 32pt;
+    font-size: 22pt;
     font-weight: normal;
     color: #707070;
 

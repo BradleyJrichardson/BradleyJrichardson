@@ -356,20 +356,22 @@ const blobFunc = (blobSelector) => {
 
 
 export const ProjectTextBlob = styled.div`
-  height: 400px;
+  /* height: 400px;
   width: 100%;
+
   background-position: left;
-  background-size: 100%; 
-  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100%;  */
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-
-  ${({ blobSelector }) =>
+  flex-direction: column; */
+  /* margin-right: -100px; */
+  /* ${({ blobSelector }) =>
     `
       background-image: url(${blobFunc(blobSelector)});
     `
-  };
+  }; */
 
 `;
 

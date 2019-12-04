@@ -2,25 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image"
-import { Container, Wrapper, PlainButton, ProjectTextBlob } from 'components/common'
-
-// import blobClip from 'assets/illustrations/blob-shape.svg'
-// const ClippedImage = styled(Img)`
-//   clip-path: ${blobClip};
-// `
+import { Container, Wrapper } from 'components/common'
 
 
 const Project = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 `
-
-const ProjectImageWrapper = styled.div`
-  width: 40%;
-`
-
-
 
 
 
@@ -77,80 +66,11 @@ export const Projects = () => {
   
   return (
     <Wrapper as={Container} id="projects">
-      {/* <ClippedImage fluid={data.sane.childImageSharp.fluid} /> */}
+      <h1>Projects</h1>
       
-      <Project>  
-        <ProjectTextBlob blobSelector={1}>
-          <h4>hola</h4>
-          <p>lorem</p>
-          <PlainButton>Live Site</PlainButton>
-        </ProjectTextBlob>
-        <ProjectImageWrapper>
-          <Img fluid={sane}/>
-        </ProjectImageWrapper>
-      </Project>
-
-      <Project>
-        <ProjectImageWrapper>
-          <Img fluid={afca}/>
-        </ProjectImageWrapper>
-
-        <ProjectTextBlob blobSelector={2}>
-          <h4>hola</h4>
-          <p>lorem</p>
-          <PlainButton>Live Site</PlainButton>
-        </ProjectTextBlob>
-      </Project>
-
-
-      <Project>
-        <ProjectTextBlob blobSelector={3}>
-          <h4>hola</h4>
-          <p>lorem</p>
-          <PlainButton>Live Site</PlainButton>
-        </ProjectTextBlob>
-
-        <ProjectImageWrapper>
-          <Img fluid={lumin}/>
-        </ProjectImageWrapper>
-      </Project>
-
-
-      <Project>
-        <ProjectImageWrapper>
-          <Img fluid={socialCohesian}/>
-        </ProjectImageWrapper>
-
-        <ProjectTextBlob blobSelector={4}>
-          <h4>hola</h4>
-          <p>lorem</p>
-          <PlainButton>Live Site</PlainButton>
-        </ProjectTextBlob>
-      </Project>
-
-      <Project>
-        <ProjectTextBlob blobSelector={5}>
-          <h4>hola</h4>
-          <p>lorem</p>
-          <PlainButton>Live Site</PlainButton>
-        </ProjectTextBlob>
-
-        <ProjectImageWrapper>
-          <Img fluid={dashboard}/>
-        </ProjectImageWrapper>
-      </Project>
-
-
-
-
-
-
-
- 
     </Wrapper>
   )
 }
-
 
 
 

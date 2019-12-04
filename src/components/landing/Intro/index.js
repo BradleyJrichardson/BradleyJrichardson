@@ -5,22 +5,20 @@ import { Container, Button } from 'components/common'
 import dev from 'assets/illustrations/dev.svg'
 import { Wrapper, IntroWrapper, Details, ButtonWrapper, Thumbnail } from './styles'
 
+
 export const Intro = () => (
 	<Wrapper>
 		<Header />
 		<IntroWrapper as={Container}>
 			<Details>
 				<h1>Bradley<br/>Richardson</h1>
-				{/* <h4>Full Stack <br/>Web Developer</h4> */}
+				<h4>Full Stack Developer</h4>
 					<ButtonWrapper>
 						<Button as={AnchorLink} href="#projects">
-							Projects
+							Press me
 						</Button>
 					</ButtonWrapper>
 			</Details>
-			<Thumbnail>
-				<img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
-			</Thumbnail>
 		</IntroWrapper>
 	</Wrapper>
 )
