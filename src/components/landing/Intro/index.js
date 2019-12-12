@@ -1,9 +1,10 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import styled from 'styled-components'
 import { Header } from 'components/landing/navs'
 import { Container, Button } from 'components/common'
-import dev from 'assets/illustrations/dev.svg'
-import { Wrapper, IntroWrapper, Details, ButtonWrapper, Thumbnail } from './styles'
+import { Wrapper, IntroWrapper, Details, ButtonWrapper } from './styles'
+
 
 
 export const Intro = () => (

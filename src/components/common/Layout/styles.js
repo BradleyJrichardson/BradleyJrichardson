@@ -1,12 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
+const scrollbarBG = "#b18597";
+const thumbBG = "#ffe9e9";
+
+
 export const Global = createGlobalStyle`
   html {
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
   }
+  
  body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,4 +61,44 @@ table {
 a {
   text-decoration: none;
 }
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 36pt;
+    color: #212121;
+
+    @media (max-width: 680px) {
+      font-size: 30pt;
+    }
+  }
+
+  h2 {
+    margin-bottom: 2.5rem;
+    font-size: 22pt;
+    font-weight: normal;
+    color: #707070;
+
+    @media (max-width: 680px) {
+      font-size: 26pt;
+    }
+  }
+
+
+  /* scrollbar magic */
+
+  body::-webkit-scrollbar {
+  width: 30px;
+  height: 30px; 
+  }
+  body {
+  scrollbar-width: thin;
+  scrollbar-color: ${thumbBG} ${scrollbarBG};
+  }
+  body::-webkit-scrollbar-thumb {
+  background-color: ${thumbBG} ;
+  border-radius: 6px;
+  border: 3px solid ${scrollbarBG};
+  }
 `;
+
+

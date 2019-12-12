@@ -1,15 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image"
-import { Container, Wrapper } from 'components/common'
+import { Container, Wrapper, Card, Grid, Item, Stats, PlainButton, ProjectHeader } from 'components/common'
 
-
-const Project = styled.div`
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-`
 
 
 
@@ -66,8 +59,124 @@ export const Projects = () => {
   
   return (
     <Wrapper as={Container} id="projects">
-      <h1>Projects</h1>
-      
+      <ProjectHeader>Projects</ProjectHeader>
+      <h2>Work</h2>
+      <Grid>
+          <Item
+            // key={node.id}
+            as="a"
+            // href={node.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card>
+              <div>
+                <h4>Hello World</h4>
+                <p>description</p>
+              </div>
+              
+              <Stats>
+                <PlainButton>link</PlainButton>
+              </Stats>
+
+            </Card>
+          </Item>
+          <Item
+            // key={node.id}
+            as="a"
+            // href={node.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card>
+              <div>
+                <h4>Hello World</h4>
+                <p>description</p>
+              </div>
+              
+              <Stats>
+                <PlainButton>link</PlainButton>
+              </Stats>
+
+            </Card>
+          </Item>
+          <Item
+            // key={node.id}
+            as="a"
+            // href={node.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card>
+              <div>
+                <h4>Hello World</h4>
+                <p>description</p>
+              </div>
+              
+              <Stats>
+                <PlainButton>link</PlainButton>
+              </Stats>
+
+            </Card>
+          </Item>
+          <Item
+            // key={node.id}
+            as="a"
+            // href={node.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card>
+              <div>
+                <h4>Hello World</h4>
+                <p>description</p>
+              </div>
+              
+              <Stats>
+                <PlainButton>link</PlainButton>
+              </Stats>
+
+            </Card>
+          </Item>
+          <Item
+            // key={node.id}
+            as="a"
+            // href={node.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card>
+              <div>
+                <h4>Hello World</h4>
+                <p>description</p>
+              </div>
+              
+              <Stats>
+                <PlainButton>link</PlainButton>
+              </Stats>
+
+            </Card>
+          </Item>
+          <Item
+            // key={node.id}
+            as="a"
+            // href={node.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Card>
+              <div>
+                <h4>Hello World</h4>
+                <p>description</p>
+              </div>
+              
+              <Stats>
+                <PlainButton>link</PlainButton>
+              </Stats>
+
+            </Card>
+          </Item>
+      </Grid>
     </Wrapper>
   )
 }

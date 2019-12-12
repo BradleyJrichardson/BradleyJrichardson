@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Container, Card, Wrapper, Grid, Item, Content, Stats } from 'components/common'
+import { Container, Wrapper, Card, Grid, Item, Stats } from 'components/common'
+
 import starIcon from 'assets/icons/star.svg'
 import forkIcon from 'assets/icons/fork.svg'
 
@@ -51,10 +52,11 @@ export const Github = () => {
             rel="noopener noreferrer"
           >
             <Card>
-              <Content>
+              <div>
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
-              </Content>
+              </div>
+              
               <Stats>
                 <div>
                   <img src={starIcon} alt="stars" />
@@ -65,6 +67,7 @@ export const Github = () => {
                   <span>{node.forkCount}</span>
                 </div>
               </Stats>
+
             </Card>
           </Item>
         ))}
