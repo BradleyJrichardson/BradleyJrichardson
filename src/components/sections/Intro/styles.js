@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   position: relative;
   overflow: hidden;
   padding-bottom: 1.5rem;
-  background-color: pink;
+  background-color: #efeeff;
   height: 80vh;
   padding-top: 1.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 62% 95%, 29% 99%, 0 94%);
@@ -16,16 +16,19 @@ export const StyledHeader = styled.header`
 `
 export const IntroWrapper = styled.div`
   padding: 4rem 0;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Details = styled.div`
   text-align: center;
-
-
   h1 {
     margin-bottom: 2rem;
-    font-size: 36pt;
+    font-size: 2.5rem;
     color: #212121;
+    line-height: 3.5rem;
 
     @media (max-width: 680px) {
       font-size: 30pt;
@@ -34,7 +37,7 @@ export const Details = styled.div`
 
   h4 {
     margin-bottom: 2.5rem;
-    font-size: 22pt;
+    font-size: 1.5rem;
     font-weight: normal;
     color: #707070;
 

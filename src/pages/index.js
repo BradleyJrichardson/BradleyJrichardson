@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, SEO } from 'components/common';
-import { Intro, Skills, Contact, Github, Projects } from 'components/landing';
+import { Intro, Skills, Contact, Github, Projects } from 'components/sections';
 
 export default () => (
   <Layout>

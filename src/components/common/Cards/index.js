@@ -16,8 +16,8 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
+    margin-bottom: 1rem;
+    font-size: 12pt;
     font-weight: normal;
     line-height: 1.3;
     color: #707070;
@@ -73,12 +73,43 @@ export const Item = styled.div`
   justify-content: space-between;
 
   h4 {
+    font-size: 1rem;
     color: #212121;
+    padding-bottom: 10px;
     padding-bottom: 10px;
   }
 
   p {
     color: #707070;
+    font-size: 0.8rem;
+  }
+`;
+
+export const ProjectItem = styled.div`
+  width: 100%;
+  height: 200px;
+  /* overflow: hidden; */
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h4 {
+    font-size: 1rem;
+    color: #212121;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    color: #707070;
+    list-style: square;
+    padding: 0 0 20px 15px; 
+  }
+
+  li {
+    font-size: 0.8rem;
+    padding: 3px 0;
+    line-height: 15px;
   }
 `;
 

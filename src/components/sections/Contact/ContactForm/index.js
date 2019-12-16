@@ -2,9 +2,11 @@ import React from 'react'
 import { Form, withFormik, FastField, ErrorMessage } from 'formik'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
-import { Button, Input } from 'components/common'
+import { Button, Input, SmallButton, IconButton } from 'components/common'
 import { recaptcha_key } from 'data/config'
 import { Error, Center, InputField } from './styles'
+import github from 'assets/icons/github.svg'
+import linkedin from 'assets/icons/linkedin.svg'
 
 const ContactForm = ({
 	setFieldValue,
@@ -81,10 +83,21 @@ const ContactForm = ({
 			</InputField>
 		)}
 		<Center>
-			<Button secondary type="submit" disabled={isSubmitting}>
+			<Button type="submit" disabled={isSubmitting}>
 				Submit
 			</Button>
+			<IconButton target="_blank" as="a" href="https://github.com/BradleyJrichardson">
+				<div>
+					<img src={github} alt="github" />
+				</div>
+			</IconButton>
+			<IconButton target="_blank" as="a" href="https://www.linkedin.com/in/bradleyjakerichardson/">
+				<div>
+					<img src={linkedin} alt="linkedin" />
+				</div>
+			</IconButton>
 		</Center>
+
 	</Form>
 )
 

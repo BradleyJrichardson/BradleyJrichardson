@@ -76,7 +76,7 @@ h1 {
     margin-bottom: 2.5rem;
     font-size: 22pt;
     font-weight: normal;
-    color: #707070;
+    color: #111;
 
     @media (max-width: 680px) {
       font-size: 26pt;
@@ -87,15 +87,18 @@ h1 {
   /* scrollbar magic */
 
   body::-webkit-scrollbar {
-  width: 30px;
+  width: 25px;
   height: 30px; 
+  }
+  body::-webkit-scrollbar-track {
+  background: #efeeff;
   }
   body {
   scrollbar-width: thin;
   scrollbar-color: ${thumbBG} ${scrollbarBG};
   }
   body::-webkit-scrollbar-thumb {
-  background-color: ${thumbBG} ;
+  background-color: ${thumbBG};
   border-radius: 6px;
   border: 3px solid ${scrollbarBG};
   }

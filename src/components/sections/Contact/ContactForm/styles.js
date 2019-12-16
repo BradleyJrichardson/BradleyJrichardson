@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+let pinkborder = "#b18597";
 
 export const Error = styled.span`
-  color: #ff4136;
+  color: ${pinkborder};
 `;
 
 export const Center = styled.div`

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Footer } from 'components/landing/navs'
+import { Link } from 'gatsby'
 import { Global } from './styles'
 import './fonts.css'
 import detailsIllustration from 'assets/illustrations/details.svg';
@@ -16,7 +16,6 @@ export const Layout = ({ children }) => (
 	<>
 		<Global />
 		{children}
-		<Footer />
 	</>
 )
 
@@ -40,14 +39,55 @@ export const Wrapper = styled.div`
 `;
 
 export const ProjectHeader = styled.h1`
-  border-bottom: 20px solid ${pinkshadow};
-  width: 30%;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 97%;
+    transform: translateX(-50%);
+    height: 6px;
+    background-color: grey;
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+  }
+  :hover {
+    color: ${pinkborder};
+  }
+  :hover:after {
+    background-color: ${pinkborder};
+  }
+`
+
+export const UnderlinedNav = styled(Link)`
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 97%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: grey;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+  }
+  :hover {
+    color: ${pinkborder};
+  }
+  :hover:after {
+    background-color: ${pinkborder};
+  }
 `
 
 
 // input
-
-
 export const Input = styled.input`
   width: 100%;
   box-sizing: border-box;
@@ -60,7 +100,7 @@ export const Input = styled.input`
   ${({ error }) =>
     error &&
     `
-		border-color: #ff4136;
+		border-color: ${pinkborder};
 	`}
 
   &::placeholder {
@@ -88,4 +128,41 @@ export const SkillsContainer = styled.div`
     flex-direction: column;
   }
 `;
+
+// waving hand 
+
+export const WavingHand = styled.span`
+  padding-left: 20px;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  
+  @keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+`
+
+
 

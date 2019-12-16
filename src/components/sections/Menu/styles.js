@@ -11,3 +11,9 @@ export const Wrapper = styled.div`
   }
 `;
 
+
+export const ButtonWrapper = styled.nav`
+  @media (max-width: 960px) {
+    display: none;
+  }
+`
