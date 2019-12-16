@@ -1,21 +1,12 @@
 module.exports = {
   defaultTitle: 'Bradley Richardson',
-  logo: '',
+  logo: 'todo',
   author: 'Bradley Richardson',
-  url: '',
+  url: 'todo',
   legalName: 'Bradley Richardson',
-  defaultDescription: '',
-  socialLinks: {
-    twitter: '',
-    github: '',
-    linkedin: '',
-  },
+  defaultDescription: 'Portfolio',
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
-  social: {
-    facebook: '',
-    twitter: '',
-  },
   address: {
     city: 'City',
     region: 'Region',
@@ -23,8 +14,8 @@ module.exports = {
     zipCode: 'ZipCode',
   },
   contact: {
-    email: 'email',
-    phone: 'phone number',
+    email: 'brdl.richardson@gmail.com',
+    phone: '0422419019',
   },
   foundingDate: '2019',
   recaptcha_key: '6LccL8UUAAAAAHP6UbzpLxTV7xBBPqm6B9vdnJxA',
