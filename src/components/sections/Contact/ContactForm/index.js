@@ -3,12 +3,11 @@ import { Form, withFormik, FastField, ErrorMessage } from 'formik'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import { Button, Input, IconButton } from 'components/common'
-// import { recaptcha_key } from 'data/config'
+import { recaptcha_key } from 'data/config'
 import { Error, Center, InputField } from './styles'
 import github from 'assets/icons/github.svg'
 import linkedin from 'assets/icons/linkedin.svg'
 
-const recaptcha_key = process.env.SITE_RECAPTCHA_KEY;
 const ContactForm = ({
 	setFieldValue,
 	isSubmitting,
