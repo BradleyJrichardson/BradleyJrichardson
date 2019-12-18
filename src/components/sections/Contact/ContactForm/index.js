@@ -23,6 +23,7 @@ const ContactForm = ({
 		data-netlify-honeypot="bot-field"
 	>
 		<input type="hidden" name="bot-field" />
+		<div data-netlify-recaptcha="true"></div>
 		<InputField>
 			<Input
 				as={FastField}
