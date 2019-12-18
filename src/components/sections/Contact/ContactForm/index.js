@@ -88,7 +88,7 @@ const ContactForm = ({
 			<Button type="submit" disabled={isSubmitting}>
 				Submit
 			</Button>
-			<IconButton target="_blank" as="a" href="https://github.com/BradleyJrichardson">
+			{/* <IconButton target="_blank" as="a" href="https://github.com/BradleyJrichardson">
 				<div>
 					<img src={github} alt="github" />
 				</div>
@@ -97,7 +97,7 @@ const ContactForm = ({
 				<div>
 					<img src={linkedin} alt="linkedin" />
 				</div>
-			</IconButton>
+			</IconButton> */}
 		</Center>
 
 	</Form>
