@@ -1,8 +1,8 @@
 module.exports = {
   defaultTitle: 'Bradley Richardson',
-  logo: 'todo',
+  logo: 'https://www.bradrichardson.dev/favicon/favicon-512.png',
   author: 'Bradley Richardson',
-  url: 'todo',
+  url: 'https://www.bradrichardson.dev/',
   legalName: 'Bradley Richardson',
   defaultDescription: 'Portfolio',
   themeColor: '#6b63ff',
@@ -19,4 +19,5 @@ module.exports = {
   },
   foundingDate: '2019',
   recaptcha_key: '6LccL8UUAAAAAHP6UbzpLxTV7xBBPqm6B9vdnJxA',
+  googleAnalyticsID: 'UA-154719948-1',
 };
