@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import { Link } from 'gatsby'
 import { Global } from './styles'
 import './fonts.css'
@@ -11,6 +12,8 @@ let pink = "#ffe9e9";
 let darkpink = "#f9c4d2";
 let pinkborder = "#b18597";
 let pinkshadow = "#ffe3e2";
+
+
 
 export const Layout = ({ children }) => (
 	<>

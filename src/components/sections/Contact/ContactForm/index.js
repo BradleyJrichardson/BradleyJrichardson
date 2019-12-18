@@ -2,9 +2,10 @@ import React from 'react'
 import { Form, withFormik, FastField, ErrorMessage } from 'formik'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
-import { Button, Input, IconButton } from 'components/common'
+import { Button, Input, IconButton, SmallButton } from 'components/common'
 import { recaptcha_key } from 'data/config'
 import { Error, Center, InputField } from './styles'
+import Resume from 'assets/resume/bradley-richardson.pdf'
 import github from 'assets/icons/github.svg'
 import linkedin from 'assets/icons/linkedin.svg'
 
@@ -87,6 +88,19 @@ const ContactForm = ({
 			<Button secondary type="submit" disabled={isSubmitting}>
 				Submit
 			</Button>
+			<IconButton target="_blank" as="a" href="https://github.com/BradleyJrichardson">
+				<div>
+					<img src={github} alt="github" />
+				</div>
+			</IconButton>
+			<IconButton target="_blank" as="a" href="https://www.linkedin.com/in/bradleyjakerichardson/">
+				<div>
+					<img src={linkedin} alt="linkedin" />
+				</div>
+			</IconButton>
+			<SmallButton target="_blank" as="a" href={Resume}>
+					Resume
+			</SmallButton>
 		</Center>
 	</Form>
 )
