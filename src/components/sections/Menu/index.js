@@ -4,7 +4,6 @@ import { Container, SmallButton } from 'components/common'
 import { Wrapper, ButtonWrapper } from './styles'
 import Resume from 'assets/resume/bradley-richardson.pdf'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import linkedin from 'assets/icons/linkedin.svg'
 
 
 export const Header = () => (

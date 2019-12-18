@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import { Link } from 'gatsby'
 import { Global } from './styles'
 import './fonts.css'
 import detailsIllustration from 'assets/illustrations/details.svg';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { IconButton } from 'components/common'
+import arrow from 'assets/icons/arrow.svg'
 
 let text = "#382b22";
 let lightpink = "#fff0f0";
@@ -13,14 +15,29 @@ let darkpink = "#f9c4d2";
 let pinkborder = "#b18597";
 let pinkshadow = "#ffe3e2";
 
-
+const ToTop = styled.div`
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     margin: 20px 10px;
+     z-index: 1000;
+`
 
 export const Layout = ({ children }) => (
 	<>
+    <ToTop>
+      <IconButton as={AnchorLink} href="#intro">
+      <div>
+         <img src={arrow} alt="to top" />
+      </div>
+      </IconButton>
+    </ToTop>
 		<Global />
 		{children}
 	</>
 )
+
+
 
 // Global
 export const Container = styled.div`

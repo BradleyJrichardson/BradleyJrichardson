@@ -60,6 +60,7 @@ export const Button = styled.button`
 `
 
 export const SmallButton = styled.button`
+    text-align: center;
     margin: 0 7px;
     position: relative;
     display: inline-block;
