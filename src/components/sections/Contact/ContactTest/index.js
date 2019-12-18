@@ -53,6 +53,7 @@ export default function ContactTest() {
         data-netlify-recaptcha="true"
         onSubmit={handleSubmit}
       >
+          <input type="hidden" name="form-name" value="contact" />
         <noscript>
           <p>This form won’t work with Javascript disabled</p>
         </noscript>
