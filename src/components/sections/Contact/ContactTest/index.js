@@ -40,6 +40,7 @@ export default function ContactTest() {
         ...state,
       }),
     })
+      .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error))
   }
 
@@ -47,6 +48,7 @@ export default function ContactTest() {
       <form
         name="contact-recaptcha"
         method="post"
+        action="/thanks/"
         data-netlify="true"
         data-netlify-recaptcha="true"
         onSubmit={handleSubmit}
