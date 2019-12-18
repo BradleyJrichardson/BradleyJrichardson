@@ -22,6 +22,7 @@ const ContactForm = ({
 		data-netlify-recaptcha="true"
 		data-netlify-honeypot="bot-field"
 	>
+		<input type="hidden" name="bot-field" />
 		<InputField>
 			<Input
 				as={FastField}
@@ -136,7 +137,7 @@ export default withFormik({
 		} catch (err) {
 			setSubmitting(false)
 			setFieldValue('success', false)
-			alert('Something went wrong, please try again!') // eslint-disable-line
+			alert('Something went wrong, please try again!')
 		}
 	},
 })(ContactForm)
