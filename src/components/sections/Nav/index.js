@@ -9,7 +9,7 @@ export const Nav = () => {
 		<Wrapper>
 			<Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
 			<Hamburger sidebar={sidebar} toggle={toggle} />
-			<Sidebar sidebar={sidebar} toggle={toggle} />
+			<Sidebar sidebar={sidebar} toggle={() => toggle(!sidebar)} />
 		</Wrapper>
 	)
 }
