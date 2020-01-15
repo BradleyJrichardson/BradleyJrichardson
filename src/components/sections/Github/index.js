@@ -18,8 +18,8 @@ export const Github = () => {
         github {
           viewer {
             repositories(
-              first: 8
-              orderBy: { field: STARGAZERS, direction: DESC }
+              first: 12
+              orderBy: { field: CREATED_AT, direction: DESC }
             ) {
               edges {
                 node {
@@ -56,7 +56,7 @@ export const Github = () => {
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
               </div>
-              
+
               <Stats>
                 <div>
                   <img src={starIcon} alt="stars" />
